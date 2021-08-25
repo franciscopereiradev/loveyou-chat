@@ -64,7 +64,6 @@ function SignOut() {
   )
 }
 
-
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
@@ -110,7 +109,6 @@ function ChatRoom() {
   </>)
 }
 
-
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
@@ -123,6 +121,5 @@ function ChatMessage(props) {
     </div>
   </>)
 }
-
 
 export default App;
